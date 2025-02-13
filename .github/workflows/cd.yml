@@ -20,7 +20,7 @@ jobs:
     name: Deploy to ${{ inputs.environment }} manually
     runs-on: ubuntu-latest
     env:
-      IMAGE_NAME: asia-east1-docker.pkg.dev/${{ secrets.GOOGLE_PROJECT }}/gcf-artifacts/${{ inputs.env_tag }}/nextjs-example:${{ github.sha }}
+      IMAGE_NAME: asia-east1-docker.pkg.dev/${{ secrets.GOOGLE_PROJECT }}/trietmapdit/${{ inputs.env_tag }}/nextjs-example:${{ github.sha }}
     steps:
       - name: code checkout
         uses: actions/checkout@v4
