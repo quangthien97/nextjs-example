@@ -52,7 +52,7 @@ jobs:
             });
 
             await github.rest.actions.createWorkflowDispatch({
-              owner: 'huydq189',
+              owner: 'quangthien97',
               repo: 'example-gitops',
               workflow_id: 'deploy.yaml',
               ref: 'main',
